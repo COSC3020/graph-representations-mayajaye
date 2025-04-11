@@ -24,7 +24,7 @@ analyze it as above.
 
 The steps are:
 1. Create rows of the list based on the number of vertices. $\Theta(|V|)$
-	2. Loop over all potential edges and push onto the list if an edge exists. $\Theta(|V^{2}|)$
+	1. Loop over all potential edges and push onto the list if an edge exists. $\Theta(|V^{2}|)$
 
 Runtime equation:
 
@@ -36,7 +36,8 @@ Therefore,
 
 $T(n)\in\Theta(|V^{3}|)$
 
-Because you are going to have to iterate over $|V^{2}|$ no matter what, the conversion just depends on the number of vertices.
+Because you are going to have to iterate over $|V^{2}|$ no matter what, the runtime
+just depends on the number of vertices.
 
 #### Runtime of list to matrix conversion: $T(n)\in\Theta(|V^{2}|+|E|)$
 
@@ -59,8 +60,8 @@ $|V|$ is asymptotically insignificant, therefore:
 $T(n)\in\Theta(|V^{2}| + |E|)$
 
 This algorithm will have to iterate over both the number of vertices squared and 
-the number of edges, so it depends on both the number of edges and number of 
-vertices.
+the number of edges, so the runtime depends on both the number of edges and number
+of vertices.
 
 
 
