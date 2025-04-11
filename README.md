@@ -15,6 +15,8 @@ depend on the number of vertices, the number of edges, or both?
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
 
+
+
 ## Bonus
 
 Implement a function to convert an adjacency list to an adjacency matrix and
