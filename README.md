@@ -20,21 +20,21 @@ most important part. Add your answer to this markdown file.
 Implement a function to convert an adjacency list to an adjacency matrix and
 analyze it as above.
 
-#### Runtime of matrix to list conversion: $T(n)\in\Theta(|V^{3}|)$
+#### Runtime of matrix to list conversion: $T(n)\in\Theta(|V^{2}|)$
 
 The steps are:
 1. Create rows of the list based on the number of vertices. $\Theta(|V|)$
-	1. Loop over all potential edges and push onto the list if an edge exists. $\Theta(|V^{2}|)$
+	1. Loop over all potential edges and push onto the list if an edge exists. $\Theta(|V|)$
 
 Runtime equation:
 
-$T(n) = |V| \cdot |V^{2}|$
+$T(n) = |V| \cdot |V|$
 
-$= |V^{3}|$
+$= |V^{2}|$
 
 Therefore,
 
-$T(n)\in\Theta(|V^{3}|)$
+$T(n)\in\Theta(|V^{2}|)$
 
 Because you are going to have to iterate over $|V^{2}|$ no matter what, the runtime
 just depends on the number of vertices.
